@@ -66,9 +66,9 @@ stages:
   - deployment: Deploy
     pool:
       name: 'MySelfHostedLinuxAgentPool'
-    environment: spike
+    environment: tailspin-release
     variables:
-    - group: Release
+    - group: tailspin-release
     strategy:
       runOnce:
         deploy:
